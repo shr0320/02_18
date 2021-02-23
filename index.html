@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>세로형 와이어프레임 아코디언메뉴 공지사항 모달창 롤링 슬라이드 패밀리사이트(점핑메뉴)</title>
+    
+    <!-- icons -->
+    <!-- <link rel="stylesheet" href="./icon/css/font-awesome.css"> -->
+    <script src="./icon/fontawesome.js"></script>
+    
+    <!-- reset.css style.css -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- 오픈소스 jQuery 1.12.4 -->
+    <script src="./js/lib/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    <header id="header">
+        <h1 class="logo-wrap blind">로고</h1>
+        <nav id="nav">
+            <ul>
+                <li>
+                    <a href="#" onclick='goUrl("main1")'class="main-btn">MENU-1</a>
+                    <div class="sub sub1">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main1-1")' class="sub-btn">SubMenu1</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main1-2")' class="sub-btn">SubMenu2</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main1-3")' class="sub-btn">SubMenu3</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main1-4")' class="sub-btn">SubMenu4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick='goUrl("main1")'class="main-btn">MENU-2</a>
+                    <div class="sub sub2">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main2-1")' class="sub-btn">SubMenu1</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-2")' class="sub-btn">SubMenu2</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-3")' class="sub-btn">SubMenu3</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main2-4")' class="sub-btn">SubMenu4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" onclick='goUrl("main1")' class="main-btn">MENU-3</a>
+                    <div class="sub sub3">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main3-1")' class="sub-btn">SubMenu1</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-2")' class="sub-btn">SubMenu2</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-3")' class="sub-btn">SubMenu3</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main3-4")' class="sub-btn">SubMenu4</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"onclick='goUrl("main1")' class="main-btn">MENU-4</a>
+                    <div class="sub sub4">
+                        <ul>
+                            <li><a href="javascript:" onclick='goUrl("main4-1")' class="sub-btn">SubMenu1</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-2")' class="sub-btn">SubMenu2</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-3")' class="sub-btn">SubMenu3</a></li>
+                            <li><a href="javascript:" onclick='goUrl("main4-4")' class="sub-btn">SubMenu4</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <section id="section1">
+
+            <div class="slide-container">
+                <div class="slide-view">
+                    <ul class="slide-wrap">
+                        <li class="slide slide3"></li>
+                        <li class="slide slide0"></li>
+                        <li class="slide slide1"></li>
+                        <li class="slide slide2"></li>
+                        <li class="slide slide3"></li>
+                        <li class="slide slide0"></li>
+                    </ul>
+                </div> <!-- slide view -->
+                <!-- 좌우 화살버튼 -->
+                <span class="prev-btn-wrap"><a href="#" class="prev-btn"></a></span>
+                <span class="next-btn-wrap"><a href="#" class="next-btn"></a></span>
+            </div> <!-- slide-container -->
+
+        </section>
+        <section id="section2" class="clearfix">
+            <div class="column column1"> <!-- 칸 나누기 영역 -->
+                <div class="gap"> <!-- 칸 내부 여백 영역 -->
+               <!-- 공지사항 타이틀 -->
+                <div class="notice-title">
+                    <ul class = "clearfix">
+                        <li>
+                            <h2>Notice</h2>
+                        </li>
+                        <li>
+                            <!-- <a href="http://www.bok.or.kr/museum/pgm/master/view.do?progrmSn=84&progrmSeCd=03&menuNo=700124&pageIndex=1" target='_self'title="more"><img src="./img/more.gif" alt="more"></a> -->
+                            <a href="javascript:void(0);" onclick ='goUrl("noticeMore")' target='_self'title="more"><img src="./img/more.gif" alt="more"></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- 공지사항 텍스트 목록 -->
+                <div class="notice-content">
+                    <ul>
+                        <li>
+                            <span><a href="#" class = "notice-btn" title="한국은행 설립 이후 우리나라 화폐, 한국은행 김태형 팀장]">화폐박행 설립 이후 우리나라 화폐, 한국은행 김태형 팀장]</a></span>
+                            <span>2021-02-17</span>
+                        </li>
+                        <li>
+                            <span><a href="#" class = "notice-btn"  title="조선후기 경제와 상평통보, 건국대학교 신병주 교수]">화폐신청[11.27(수) 주제: 조선후기 경제와 상평통보, 건국대학교 신병주 교수]</a></span>
+                            <span>2021-02-16</span>
+                        </li>
+                        <li>
+                            <span><a href="#" class = "notice-btn"  title="근대화폐2, 충북대학교 배영목 교수">근대화폐2, 충북대학교 배영목 교수 화폐, 한국은행 김태형 팀장]</a></span>
+                            <span>2021-02-15</span>
+                        </li>
+                        <li>
+                            <span><a href="#" class = "notice-btn"  title="우리나라 근대화폐 1 충북대학교 배영목 교수]">화폐박물관특별강좌 참가 신청 [11.12(화) 주제: 우리나라 근대화폐 1 충북대학교 배영목 교수]</a></span>
+                            <span>2021-02-14</span>
+                        </li>
+                        <li>
+                            <span><a href="#" class = "notice-btn"  title="화폐수집 길라잡이; 동서양 화폐 삼천년을 담다, (주)풍산화동양행 대표 이제철]">화폐박물관 특별강좌 참가 신청[11.5(화), 주제: 화폐수집 길라잡이; 동서양 화폐 삼천년을 담다, (주)풍산화동양행 대표 이제철]</a></span>
+                            <span>2021-02-13</span>
+                        </li>
+
+                    </ul>
+                </div>
+             </div>
+            </div>
+            <div class="column column2">
+                <div class="gap"> <!-- 위아래여백 15px -->
+                    <div class="gallery-wrap">
+                        <ul>
+                            <li>
+                                <div> <!-- 좌우여백 15px 마주보는 여백은 1/2-->
+                                    <a href="#" class = "gallery-btn"title ='gallery'></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class = "gallery-btn"title ='gallery2'></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="column column3"></div>
+        </section>
+    </main>
+    <footer id="footer" class="clearfix">
+        <div class="left-wrap"></div>
+        <div class="right-wrap">
+            <div class="sns-wrap"></div>
+            <div class="family-wrap"></div>
+        </div>
+    </footer>
+
+
+</div> <!-- wrap 1000* 650 -->
+    <!-- 모달창(레이어 팝업창) 공지사항-->
+    <div id="modal">
+        <div class="gap"> <!-- 여백 -->
+            <div class="content">
+                <h1 class='notice-text'></h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- 모달창(레이어 팝업창) 갤러리-->
+    <div id="modalGallery">
+        <div class="gap"> <!-- 여백 -->
+            <div class="content-gallery"> <!-- 배경이미지 -->
+               
+            </div>
+        </div>
+
+    </div>
+<script src="./js/intro.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

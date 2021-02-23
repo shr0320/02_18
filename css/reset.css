@@ -1,0 +1,23 @@
+@charset "UTF-8";
+* {margin:0;padding:0;vertical-align:middle;}
+html,body {width:100%;height:100%;}
+/* html */
+/* 스크롤바 생성 scroll <--> hidden */
+html {overflow-y:scroll;}
+body {font:normal 14px/1 '돋움', '굴림';color:#444;background:#fff;}
+/*
+body {font-weight:normal; font-size:14px;line-height:1;font-family:'돋움', '굴림';color:#444;background:#fff;}
+*/
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:14px;}
+em,i,address {font-style:normal;}
+ul,li {list-style:none;}
+/* 플롯팅핵 */
+.clearfix::after {content:'';display:block;clear:both;}
+.blind{display: block;text-indent: -2000px;overflow:hidden;}
+/* 링크 태그 */
+a {color:#444;text-decoration:none;}
+table {border-collapse:collapse;}
+
+/* 시멘틱 태그 */
+header,main,section,footer,nav {display:block;}
+
